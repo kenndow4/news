@@ -1,0 +1,14 @@
+.contPadre {
+    background-color: green;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+
+.contHijo {
+    background-color: red;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
