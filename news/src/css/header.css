@@ -1,0 +1,43 @@
+header {
+  width: 100%;
+  background: #fff;
+  padding: 10px 0px;
+  box-shadow: 0 2px 4px rgba(216, 216, 216, 0.1), 0 8px 16px rgba(165, 165, 165, 0.1); }
+  header .child-head {
+    background: none;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff; }
+    header .child-head h1 {
+      font-size: 30px;
+      color: #Db0404; }
+    header .child-head nav {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      header .child-head nav a {
+        color: #3f3f3f;
+        font-size: 20px;
+        text-decoration: none; }
+    header .child-head form {
+      background: #ebf2f7;
+      width: 40%;
+      height: 36px;
+      border: solid 1px #dddcdc;
+      padding: 7px 20px;
+      display: grid;
+      grid-template-columns: 95% 5%;
+      border-radius: 5px; }
+      header .child-head form input {
+        background: none;
+        border: none;
+        outline: none; }
+      header .child-head form button {
+        background: none;
+        border: none; }
+
+/*# sourceMappingURL=header.css.map */
