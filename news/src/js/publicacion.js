@@ -1,16 +1,29 @@
-
+const contendor = document.getElementById("cont-padre-public");
 const Publicacion=async()=>{
 
     // esta es la url de la api
     const  url = 'https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=AAPL&apikey=demo';
     // aqui estoy acediendo al estado del input
 
-    const resultado = await fetch(url);
+    try{
 
-    // aqui lo estoy transformando a json
-    const datos = await resultado.json();
+        const resultado = await fetch(url);
+    
+        // aqui lo estoy transformando a json
+        const datos = await resultado.json();
+        const result = datos.feed;
 
-    console.log(datos);
+        result.forEach(re => {
+            console.log("ho");
+        });
+
+
+
+    }catch(e){
+
+        console.log(e);
+
+    }
 }
 
 export default Publicacion ;
