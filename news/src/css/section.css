@@ -1,9 +1,10 @@
 .contPadre {
-    width: 90%;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
+    margin-top: 60px;
 }
 
 .contHijo {
@@ -13,24 +14,31 @@
     display: flex;
     justify-content: center;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
+    flex-direction: column;
 }
 
 .articulosIzquierda {
-    display: column;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    width: 11%;
 }
 
 .contenidito {
     display: flex;
     flex-direction: row;
-    background-color: #fff;
     padding: 10px 25px;
     border-radius: 20px;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    margin: 20px 0px 15px 50px;
     cursor: pointer;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+.contenidito:hover {
+    background-color: #ccc;
 }
 
 .articulosIzquierda {
@@ -43,13 +51,18 @@
 
 .contenedorPublicacion {
     background-color: #fff;
-    display: inline-block;
-    height: 470px;
-    margin-top: 100px;
+    margin-top: 20px;
     border-radius: 7px;
+    width: 60%;
+    margin-left: 200px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .autor, .link, .descripcion {
     margin-bottom: 10px;
     margin-left: 10px;
+}
+
+.imagensita {
+    width: 100%;
 }

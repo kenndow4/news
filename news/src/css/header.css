@@ -2,6 +2,8 @@ header {
   width: 100%;
   background: #fff;
   padding: 7px 0px;
+  position: fixed;
+  top: 0%;
   box-shadow: 0 2px 4px rgba(216, 216, 216, 0.1), 0 8px 16px rgba(165, 165, 165, 0.1); }
   header .child-head {
     background: none;
@@ -21,7 +23,7 @@ header {
       align-items: center; }
       header .child-head nav a {
         color: #3f3f3f;
-        font-size: 20px;
+        font-size: 16px;
         text-decoration: none; }
     header .child-head form {
       background: #ebf2f7;
@@ -31,7 +33,7 @@ header {
       padding: 7px 20px;
       display: grid;
       grid-template-columns: 95% 5%;
-      border-radius: 2px; }
+      border-radius: 50px; }
       header .child-head form input {
         background: none;
         border: none;
