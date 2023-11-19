@@ -1,6 +1,6 @@
 'use strict';
 
-document.getElementById("cont-padre-public");
+const contenedor = document.getElementById("cont-padre-public");
 const Publicacion=async()=>{
 
     // esta es la url de la api
@@ -14,9 +14,25 @@ const Publicacion=async()=>{
         // aqui lo estoy transformando a json
         const datos = await resultado.json();
         const result = datos.feed;
+        console.log(result);
 
         result.forEach(re => {
-            console.log("ho");
+            
+          const x = document.createElement("div");
+          x.className="contenedorPublicacion";
+          x.innerHTML=`
+          
+          <div class="imgCont">
+          <img class="imagensita" src="${re.banner_image}" alt="Foto de Publicacion" width="700px">
+      </div>
+      <p class="autor">Autor: <i>${re.authors[0]}</i></p>
+      <a href="${re.url}" target="_blank"><p class="link">Mas informacion</p></a>
+      <p class="descripcion">${re.title}</p>
+          
+          `;
+
+       contenedor.appendChild(x);
+
         });
 
 
