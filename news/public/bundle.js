@@ -1,7 +1,7 @@
 'use strict';
 
 // import { v4 as uuidv4 } from 'uuid';
-const contenedor = document.getElementById("cont-padre-public");
+const contenedor = document.getElementById("cont-publicaciones-pequeno");
 const Publicacion=async()=>{
 
     // esta es la url de la api
@@ -53,29 +53,35 @@ const Publicacion=async()=>{
              
             
           const x = document.createElement("div");
-          x.className="contenedorPublicacion";
+          x.className="publicaciones";
           x.innerHTML=`
           
 
-          <div class="contenedorDatos">
-          <img class="cristianito" src="${avatar.picture.large}" alt="Foto de ususario">
-          <div class="contFechaHora">
-              <p class="nombreUsuario">${result[i].authors[0]}</p>
-              <div class="apartadocolumn">
-              <p class="fecha">${result[i].topics[0].topic}</p>
-              <div class="borderuno"></div>
-              <p class="hora">${result[i].topics[0].relevance_score}</p>
-              <i class="fa-regular fa-clock"></i>
-              </div>
-          </div>
-      </div>
 
-          
-          <div class="imgCont">
-          <img class="imagensita" src="${result[i].banner_image}" alt="Foto de Publicacion" width="700px">
-      </div>
-      <a href="${result[i].url}" target="_blank"><p class="link">Mas informacion</p></a>
-      <p class="descripcion">${result[i].title}</p>
+
+      
+                <div class="fondo-datos">
+                    <img src="${avatar.picture.large}" alt="Foto de perfil" class="perfil">
+
+
+                    <div class="div-column">
+                        <p class="nombre-cliente"><b>${result[i].authors[0]}</b></p>
+                        <div class="datos">
+                        <p class="fecha">${result[i].topics[0].topic}</p>
+                        <div class="bolita"></div>
+                        <p class="lugar">${result[i].topics[0].relevance_score}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cont-img-publicacion">
+                    <img class="img-publicacion" src="${result[i].banner_image}" alt="Publicacion" width="300px">
+                </div>
+
+                <a href="${result[i].url}">Mas informacion</a>
+                <p class="descripcion">${result[i].title}</p>
+            
+
           
           `;
 
@@ -92,4 +98,4 @@ const Publicacion=async()=>{
     }
 };
 
-// Publicacion();
+Publicacion();
