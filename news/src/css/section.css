@@ -328,16 +328,17 @@
 }
 
 .cont-publicaciones-pequeno {
-    width: 78%;
+    width: 60%;
+    margin-top: 50px;
 }
 
 .publicaciones {
     background-color: #fff;
-    width: 90%;
+    width: 93%;
     margin: 0px auto;
-    margin-top: 50px;
+    margin-top: 15px;
     margin-bottom: 10px;
-    padding: 25px 20px;
+    padding: 25px 15px;
     border-radius: 7px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -396,9 +397,18 @@ a {
 
 .cont-anuncios {
     width: 300px;
+    margin-top: 100px;
 }
 
 .img-anuncio {
     width: 100%;
     cursor: pointer;
+    margin: 20px 0px;
+}
+
+.bordertres {
+    width: 90%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: auto;
 }

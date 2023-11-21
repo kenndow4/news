@@ -78,7 +78,7 @@ const Publicacion=async()=>{
                     <img class="img-publicacion" src="${result[i].banner_image}" alt="Publicacion" width="300px">
                 </div>
 
-                <a href="${result[i].url}">Mas informacion</a>
+                <a target="_blank" href="${result[i].url}">Mas informacion</a>
                 <p class="descripcion">${result[i].title}</p>
             
 

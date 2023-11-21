@@ -22,7 +22,8 @@ header {
       header .child-head nav a {
         color: #3f3f3f;
         font-size: 16px;
-        text-decoration: none; }
+        margin-bottom: 15px;
+        text-decoration:none;}
     header .child-head form {
       background: #ebf2f7;
       width: 40%;
