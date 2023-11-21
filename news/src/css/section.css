@@ -1,9 +1,10 @@
-.contPadre {
+/* .contPadre {
     width: 90%;
     margin: auto;
     display: flex;
     flex-direction: row;
     margin-top: 60px;
+    background-color: red;
     
 }
 
@@ -15,6 +16,7 @@
     justify-content: center;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     flex-direction: column;
+    background-color: green;
 }
 
 .articulosIzquierda {
@@ -168,4 +170,235 @@
 
 .anuciosimg:hover {
     opacity: .7;
+} */
+/* ----------------------------------------------- */
+
+.cont-padre {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-izquierdo {
+    width: 415px;
+    display: flex;
+    justify-content: end;
+    height: 100vh;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cont-izquierdo-adentro {
+    width: 250px;
+}
+
+.contenedorsitoizquierdo {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 15px;
+    width: 93%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    align-items: center;
+}
+
+.contenedorsitoizquierdo-home {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 15px;
+    width: 93%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+    .fa-house {
+        color: #ff0000;
+    }
+}
+
+.contenedorsitoizquierdo-gaming {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 15px;
+    width: 93%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.contenedorsitoizquierdo-about {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 15px;
+    width: 93%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 15px;
+    margin-top: 25px;
+}
+
+.contenedorsitoizquierdo:hover, .contenedorsitoizquierdo-gaming:hover, .contenedorsitoizquierdo-about:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+.fa-house, .fa-fire-flame-curved, .fa-twitch, .fa-medal, .fa-business-time, .fa-bitcoin, .fa-tv, .fa-graduation-cap,
+.fa-blogger-b, .fa-circle-question, .fa-icons, .fa-gears, .fa-windows {
+    color: #ff0000;
+}
+}
+
+.fa-house, .fa-fire-flame-curved, .fa-twitch, .fa-medal, .fa-business-time, .fa-bitcoin, .fa-tv, .fa-graduation-cap,
+.fa-blogger-b, .fa-circle-question, .fa-icons, .fa-gears, .fa-windows {
+    font-size: 17px;
+}
+
+.house, .popular, .gaming, .sports, .business, .crypto, .television, .celebrity, .aboutBundler, .help, .blog, .carrers,
+.descargar {
+    margin-left: 11px;
+}
+
+.borderuno {
+    width: 93%;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 1px;
+    margin-top: 12px;
+}
+
+.borderdos {
+    width: 93%;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 1px;
+    margin-top: 25px;
+}
+
+.TOPICS {
+    margin-top: 22px;
+    font-size: 13px;
+    margin-left: 6px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.AYUDA {
+    font-size: 13px;
+    margin-top: 25px;
+    margin-left: 6px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.see-more {
+    font-size: 13px;
+    padding: 11px 13px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-left: 6px;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+}
+
+.see-more:hover {
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.allrights {
+    font-size: 10px;
+    margin-top: 100px;
+}
+
+.fa-copyright {
+    font-size: 8px
+}
+
+.cont-publicacion-grande {
+    width: 51%;
+    display: flex;
+    justify-content: center;
+}
+
+.cont-publicaciones-pequeno {
+    width: 78%;
+}
+
+.publicaciones {
+    background-color: #fff;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 25px 20px;
+    border-radius: 7px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.perfil {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+.div-column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.fondo-datos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.datos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bolita {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #000;
+    margin: 0px 10px;
+}
+
+.cont-img-publicacion {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.img-publicacion {
+    width: 100%;
+    border-radius: 5px;
+}
+
+a {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.descripcion {
+    margin-top: 15px;
+}
+
+.cont-anuncios {
+    width: 300px;
+}
+
+.img-anuncio {
+    width: 100%;
+    cursor: pointer;
 }
