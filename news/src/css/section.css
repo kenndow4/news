@@ -174,23 +174,31 @@
 /* ----------------------------------------------- */
 
 .cont-padre {
-    border-top: 1px solid rgba(0, 0, 0, .1);
-    width: 100%;
+    
+    width: 70%;
     height: 100%;
     display: flex;
+    margin: auto;
     flex-direction: row;
+    margin-top: 4.5%;
+    
+   
+    
 }
 
 .cont-izquierdo {
-    width: 415px;
-    display: flex;
-    justify-content: end;
+    width: 300px;
+   
     height: 100vh;
+   
     border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+
+
 .cont-izquierdo-adentro {
     width: 250px;
+    position: fixed;
 }
 
 .contenedorsitoizquierdo {
@@ -202,6 +210,7 @@
     cursor: pointer;
     font-size: 15px;
     align-items: center;
+    
 }
 
 .contenedorsitoizquierdo-home {
@@ -213,8 +222,10 @@
     cursor: pointer;
     font-size: 15px;
     align-items: center;
-    margin-top: 16px;
+    
+    
     background-color: rgba(0, 0, 0, 0.1);
+    
     color: #000;
     .fa-house {
         color: #ff0000;
@@ -244,6 +255,7 @@
     align-items: center;
     margin-top: 15px;
     margin-top: 25px;
+    
 }
 
 .contenedorsitoizquierdo:hover, .contenedorsitoizquierdo-gaming:hover, .contenedorsitoizquierdo-about:hover {
@@ -322,23 +334,24 @@
 }
 
 .cont-publicacion-grande {
-    width: 51%;
-    display: flex;
-    justify-content: center;
+    width: 43%;
+   
+padding: 0px 20px;
 }
 
 .cont-publicaciones-pequeno {
-    width: 60%;
-    margin-top: 50px;
+    width: 100%;
+   
+    
 }
 
 .publicaciones {
     background-color: #fff;
-    width: 93%;
+    width: 100%;
     margin: 0px auto;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    padding: 25px 15px;
+   
+    margin-bottom: 20px;
+    
     border-radius: 7px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -348,24 +361,28 @@
     width: 45px;
     height: 45px;
     border-radius: 100%;
+    
 }
 
 .div-column {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    
 }
 
 .fondo-datos {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 10px ;
 }
 
 .datos {
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: #6e6c6c;
 }
 
 .bolita {
@@ -377,33 +394,41 @@
 }
 
 .cont-img-publicacion {
-    margin-top: 10px;
+    
     width: 100%;
 }
 
 .img-publicacion {
     width: 100%;
-    border-radius: 5px;
+    
 }
 
 a {
-    margin-top: 15px;
+    padding: 5px 10px;
     display: inline-block;
 }
 
 .descripcion {
-    margin-top: 15px;
+    padding: 10px;
+
 }
 
 .cont-anuncios {
     width: 300px;
-    margin-top: 100px;
+    position: fixed;
+    right: 299px;
+    
+   
+    
+    
 }
 
 .img-anuncio {
     width: 100%;
     cursor: pointer;
-    margin: 20px 0px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    
 }
 
 .bordertres {
@@ -411,4 +436,5 @@ a {
     height: 1px;
     background-color: rgba(0, 0, 0, 0.4);
     margin: auto;
+    margin-bottom: 20px;
 }

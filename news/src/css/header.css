@@ -1,7 +1,12 @@
 header {
   width: 100%;
   background: #fff;
-  padding: 7px 0px;
+  height: 55px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  z-index: 1;
   box-shadow: 0 2px 4px rgba(216, 216, 216, 0.1), 0 8px 16px rgba(165, 165, 165, 0.1);}
   header .child-head {
     background: none;
@@ -17,17 +22,19 @@ header {
     header .child-head nav {
       width: 30%;
       display: flex;
+      
       justify-content: space-between;
-      align-items: center; }
+      align-items: center; 
+    }
       header .child-head nav a {
         color: #3f3f3f;
         font-size: 16px;
-        margin-bottom: 15px;
+       
         text-decoration:none;}
     header .child-head form {
       background: #ebf2f7;
-      width: 40%;
-      height: 36px;
+      width: 30%;
+      height: 38px;
       border: solid 1px #dddcdc;
       padding: 7px 20px;
       display: grid;
