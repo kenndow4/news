@@ -178,6 +178,8 @@
     width: 70%;
     height: 100%;
     display: flex;
+    
+    
     margin: auto;
     flex-direction: row;
     margin-top: 4.5%;
@@ -224,7 +226,7 @@
     
     color: #000;
     .fa-house {
-        color: #ff0000;
+        color: #006699;
     }
 }
 
@@ -259,7 +261,7 @@
     color: #000;
 .fa-house, .fa-fire-flame-curved, .fa-twitch, .fa-medal, .fa-business-time, .fa-bitcoin, .fa-tv, .fa-graduation-cap,
 .fa-blogger-b, .fa-circle-question, .fa-icons, .fa-gears, .fa-windows {
-    color: #ff0000;
+    color: #006699;
 }
 }
 
@@ -330,8 +332,15 @@
 }
 
 .cont-publicacion-grande {
+
     width: 43%;
     padding: 0px 20px;
+
+    width: 47%;
+    
+   
+padding: 0px 20px;
+
 }
 
 .cont-publicaciones-pequeno {
@@ -389,6 +398,7 @@
 .cont-img-publicacion {
     
     width: 100%;
+    
 }
 
 .img-publicacion {
@@ -404,6 +414,12 @@ a {
 .descripcion {
     padding: 10px;
 
+}
+
+.patrocinio{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #3b3b3b;
 }
 
 .cont-anuncios {

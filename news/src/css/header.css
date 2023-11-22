@@ -18,7 +18,7 @@ header {
     color: #fff; }
     header .child-head h1 {
       font-size: 30px;
-      color: #ff0000; }
+      color: #006699; }
     header .child-head nav {
       width: 30%;
       display: flex;
@@ -32,14 +32,14 @@ header {
        
         text-decoration:none;}
     header .child-head form {
-      background: #ebf2f7;
+      background: #dff0fc;
       width: 30%;
       height: 38px;
       border: solid 1px #dddcdc;
       padding: 7px 20px;
       display: grid;
       grid-template-columns: 95% 5%;
-      border-radius: 50px; }
+      border-radius: 5px; }
       header .child-head form input {
         background: none;
         border: none;
