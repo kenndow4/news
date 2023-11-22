@@ -33,7 +33,7 @@ header {
         text-decoration:none;}
     header .child-head form {
       background: #dff0fc;
-      width: 30%;
+      
       height: 38px;
       border: solid 1px #dddcdc;
       padding: 7px 20px;
@@ -47,5 +47,20 @@ header {
       header .child-head form button {
         background: none;
         border: none; }
+        header .child-head .form-perfil{
+          
+          display: grid;
+          grid-template-columns: 90% 10%;
+          align-items: center;
+          gap: 10px;
+          justify-content: space-between;
+          width: 35%;
+        }
+
+        header .child-head .header-perfil{
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+        }
 
 /*# sourceMappingURL=header.css.map */

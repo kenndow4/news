@@ -348,6 +348,11 @@ padding: 0px 20px;
     
 }
 
+.loading{
+    text-align: center;
+    font-size: 20px;
+}
+
 .publicaciones {
     background-color: #fff;
     width: 100%;

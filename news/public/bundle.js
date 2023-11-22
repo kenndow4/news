@@ -2,6 +2,7 @@
 
 // import { v4 as uuidv4 } from 'uuid';
 const contenedor = document.getElementById("cont-publicaciones-pequeno");
+const loading = document.querySelector(".loading");
 const Publicacion=async()=>{
 
     // esta es la url de la api
@@ -10,17 +11,10 @@ const Publicacion=async()=>{
      const stado =await fetch(ht);
      const dat = await stado.json();
      const  avatar = dat.results[0];
-     console.log(avatar);
 
-    //  const u = uuidv4();
-    //  for(let i=0; i<4; i++){
-       
-    //     const c =dat.results[0].login.uuid="1";
-    //     console.log(dat.results[0]);
-
-    //  }
-  
      
+
+    
     
     // aqui estoy acediendo al estado del input
     
@@ -30,11 +24,17 @@ const Publicacion=async()=>{
         
 
         const resultado = await fetch(url);
+        console.log(resultado);
     
         // aqui lo estoy transformando a json
         const datos = await resultado.json();
+         
+
         const result = datos.feed;
-        console.log(result);
+        if(resultado.status == 200 && resultado.ok == true){
+           loading.style.display="none";
+
+        }
       
         for( let i =0; i< result.length; i++ ) {
             // dat.results[0].login.uuid="1";
@@ -78,7 +78,7 @@ const Publicacion=async()=>{
                     <img class="img-publicacion" src="${result[i].banner_image}" alt="Publicacion" width="300px">
                 </div>
 
-                <a target="_blank" href="${result[i].url}">Mas informacion</a>
+                <a href="${result[i].url}">Mas informacion</a>
                 <p class="descripcion">${result[i].title}</p>
             
 
