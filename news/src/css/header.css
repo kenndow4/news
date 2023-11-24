@@ -18,7 +18,7 @@ header {
     color: #fff; }
     header .child-head h1 {
       font-size: 30px;
-      color: #006699; }
+      color: #000; }
     header .child-head nav {
       width: 30%;
       display: flex;
