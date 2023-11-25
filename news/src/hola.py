@@ -1,3 +1,0 @@
-saludo = "hola"
-print(saludo)
-

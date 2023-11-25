@@ -3,6 +3,7 @@
 // import { v4 as uuidv4 } from 'uuid';
 const contenedor = document.getElementById("cont-publicaciones-pequeno");
 const loading = document.querySelector(".loading");
+
 const Publicacion=async()=>{
 
     // esta es la url de la api
@@ -12,7 +13,7 @@ const Publicacion=async()=>{
      const dat = await stado.json();
      const  avatar = dat.results[0];
 
-     
+  
 
     
     
@@ -61,7 +62,7 @@ const Publicacion=async()=>{
 
       
                 <div class="fondo-datos">
-                    <img src="${avatar.picture.large}" alt="Foto de perfil" class="perfil">
+                    <img src="${avatar.picture.large}" loading="lazy" alt="Foto de perfil" class="perfil">
 
 
                     <div class="div-column">
@@ -75,7 +76,7 @@ const Publicacion=async()=>{
                 </div>
 
                 <div class="cont-img-publicacion">
-                    <img class="img-publicacion" src="${result[i].banner_image}" alt="Publicacion" width="300px">
+                    <img class="img-publicacion" src="${result[i].banner_image}" loading="lazy" alt="Publicacion" width="300px">
                 </div>
 
                 <a href="${result[i].url}">Mas informacion</a>
