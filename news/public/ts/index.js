@@ -101,4 +101,3 @@ const Publicaciones = () => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 Publicaciones();
-//# sourceMappingURL=index.js.map
