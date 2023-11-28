@@ -18,19 +18,20 @@ header {
     color: #fff; }
     header .child-head h1 {
       font-size: 30px;
-      color: #006699; }
+      color: #000; }
     header .child-head nav {
       width: 30%;
       display: flex;
-      
       justify-content: space-between;
       align-items: center; 
     }
       header .child-head nav a {
         color: #3f3f3f;
         font-size: 16px;
-       
         text-decoration:none;}
+        header .child-head nav a:hover {
+          color: #000;
+        }
     header .child-head form {
       background: #dff0fc;
       
